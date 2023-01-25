@@ -1,0 +1,7 @@
+name = "next-auth-edge"
+main = "src/index.ts"
+compatibility_date = "2023-01-24"
+
+[vars]
+JWT_SECRET = "955f3f5be2d779739e9c1289a6b98f4488481fcea00b1d0b43197f9c2ec48dec" # run `openssl rand -hex 32` to generate a random secret
+NEXTAUTH_URL = "http://localhost:8787/api/auth" # the URL of your worker
